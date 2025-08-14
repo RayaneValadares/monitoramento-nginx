@@ -46,7 +46,7 @@ Inclui configuração de ambiente, instalação do servidor, criação de script
    sudo apt install -y nginx
    ```
 
-2. **Ativar e iniciar o servico**
+2. **Ativar e iniciar o serviço**
    ```bash
    sudo systemctl enable nginx
    sudo systemctl start nginx
@@ -133,7 +133,7 @@ else
 fi
 ```
 
-**Permissoes e log:**
+**Permissões e log:**
 ```bash
 sudo chmod +x /usr/local/bin/monitorar_site.sh
 sudo touch /var/log/monitoramento.log
@@ -144,7 +144,7 @@ sudo chmod 666 /var/log/monitoramento.log
 
 ---
 
-## 4️- Unidades do systemd (servicos e timers)
+## 4️- Unidades do systemd (serviços e timers)
 
 ### 4.1. Modo normal (loga + alerta e roda 1x por minuto)
 
@@ -173,7 +173,7 @@ Persistent=true
 WantedBy=timers.target
 ```
 
-### 4.2. Modo rapido (somente alerta e roda a cada 2s)
+### 4.2. Modo rápido (somente alerta e roda a cada 2s)
 
 **/etc/systemd/system/monitoramento-rapido.service**
 ```ini
