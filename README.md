@@ -237,7 +237,7 @@ sudo systemctl enable --now monitoramento-rapido.timer
      ```
 
 <p float="left">
-  <img src="imagens/monitoramento.png" width="400" />
+  <img src="imagens/monitoramento.log.png" width="400" />
 </p>
 
 4. **Garantir reinicio do Nginx**
