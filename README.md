@@ -5,8 +5,8 @@
 
 ![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white) 	![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
-Este projeto implementa um sistema de monitoramento para o **Nginx** no **Debian 12.11**, com **reinicio automatico** em caso de falha e **alertas no Discord**.  
-Inclui configuracao de ambiente, instalacao do servidor, criacao de scripts, testes e validacao.
+Este projeto implementa um sistema de monitoramento para o **Nginx** no **Debian 12.11**, com **reinicio automático** em caso de falha e **alertas no Discord**.  
+Inclui configuração de ambiente, instalação do servidor, criação de scripts, testes e validação.
 
 ---
 
@@ -25,7 +25,7 @@ Inclui configuracao de ambiente, instalacao do servidor, criacao de scripts, tes
    sudo apt update && sudo apt upgrade -y
    ```
 
-2. **Verificar a versao do sistema**
+2. **Verificar a versão do sistema**
    ```bash
    lsb_release -a
    # ou
@@ -57,7 +57,7 @@ Inclui configuracao de ambiente, instalacao do servidor, criacao de scripts, tes
    systemctl status nginx
    ```
 
-4. **Configurar reinicio automatico (override)**
+4. **Configurar reinicio automático (override)**
    Criar/editar `/etc/systemd/system/nginx.service.d/override.conf`:
    ```ini
    [Unit]
@@ -211,7 +211,7 @@ sudo systemctl enable --now monitoramento-rapido.timer
 
 ---
 
-## 5️- Testes e validacao
+## 5️- Testes e validação
 
 1. **Ver timers ativos**
    ```bash
@@ -263,7 +263,7 @@ sudo systemctl enable --now monitoramento-rapido.timer
 
 ---
 
-## 📌 Conclusao
+## 📌 Conclusão
 
 Com essa configuracao:
 - **Nginx** roda com **reinicio automatico** em caso de falha.  
@@ -273,7 +273,7 @@ Com essa configuracao:
 
 ---
 
-### Checklist rapido
+### Checklist rápido
 
 - [ ] Substituiu `DISCORD_WEBHOOK_URL` pela sua URL valida  
 - [ ] `sudo systemctl daemon-reload` apos criar/editar unidades  
