@@ -18,7 +18,7 @@ Inclui configuracao de ambiente, instalacao do servidor, criacao de scripts, tes
 
 ---
 
-## 1️⃣ Preparar o ambiente (Debian 12.11)
+## 1️- Preparar o ambiente (Debian 12.11)
 
 1. **Atualizar pacotes**
    ```bash
@@ -39,7 +39,7 @@ Inclui configuracao de ambiente, instalacao do servidor, criacao de scripts, tes
 
 ---
 
-## 2️⃣ Instalar e configurar o Nginx
+## 2️- Instalar e configurar o Nginx
 
 1. **Instalar o Nginx**
    ```bash
@@ -73,7 +73,7 @@ Inclui configuracao de ambiente, instalacao do servidor, criacao de scripts, tes
 
 ---
 
-## 3️⃣ Script de monitoramento
+## 3️- Script de monitoramento
 
 **Arquivo:** `/usr/local/bin/monitorar_site.sh`  
 **Funcao:** checa o site, registra em log (modo normal) e envia alerta pro Discord **apenas quando o estado muda** (UP ↔ DOWN).  
@@ -144,7 +144,7 @@ sudo chmod 666 /var/log/monitoramento.log
 
 ---
 
-## 4️⃣ Unidades do systemd (servicos e timers)
+## 4️- Unidades do systemd (servicos e timers)
 
 ### 4.1. Modo normal (loga + alerta e roda 1x por minuto)
 
@@ -211,7 +211,7 @@ sudo systemctl enable --now monitoramento-rapido.timer
 
 ---
 
-## 5️⃣ Testes e validacao
+## 5️- Testes e validacao
 
 1. **Ver timers ativos**
    ```bash
@@ -248,7 +248,7 @@ sudo systemctl enable --now monitoramento-rapido.timer
 
 ---
 
-## 6️⃣ Comandos uteis (resumo)
+## 6️- Comandos uteis (resumo)
 
 - `apt update && apt upgrade -y` → atualizar pacotes  
 - `apt install -y nginx` → instalar Nginx  
